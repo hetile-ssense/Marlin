@@ -1,7 +1,7 @@
 // Here, we set our awesome motherboard
 #define MOTHERBOARD BOARD_MKS_GEN_L
 
-// This ia a hack for my printer only since my motherboard has a busted E0, I'm using E1 instead and re-map the pinout
+// This is a hack for my printer only since my motherboard has a busted E0, I'm using E1 instead and re-map the pinout
 #define INVERT_E0_E1_PINOUT
 
 /**
