@@ -2675,6 +2675,11 @@ void lcd_quick_feedback(const bool clear_buttons) {
       MENU_ITEM(gcode, MSG_AUTO_HOME_Z, PSTR("G28 Z"));
     #endif
 
+    // If M48 is activated, add M48 test menu item
+    #if ENABLED(Z_MIN_PROBE_REPEATABILITY_TEST)
+      MENU_ITEM(gcode, MSG_M48_TEST, PSTR("G28\nM48 P10"));
+    #endif
+
     //
     // TMC Z Calibration
     //

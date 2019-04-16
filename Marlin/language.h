@@ -112,6 +112,8 @@
 // Common serial messages
 #define MSG_MARLIN "Marlin"
 
+#define MSG_M48_TEST                        "M48 Test (10)"
+
 // Serial Console Messages (do not translate those!)
 
 #define MSG_ENQUEUEING                      "enqueueing \""

@@ -7979,6 +7979,8 @@ inline void gcode_M42() {
 
     if (verbose_level > 0)
       SERIAL_PROTOCOLLNPGM("M48 Z-Probe Repeatability Test");
+    //  Set lcd display to M48 test running
+    lcd_setstatus("M48 Z-Probe Repeatability Test");
 
     const int8_t n_samples = parser.byteval('P', 10);
     if (!WITHIN(n_samples, 4, 50)) {
@@ -8178,6 +8180,14 @@ inline void gcode_M42() {
       SERIAL_PROTOCOL_F(sigma, 6);
       SERIAL_EOL();
       SERIAL_EOL();
+
+      #if ENABLED(ULTRA_LCD)
+        char sigma_str[8];
+        dtostrf(sigma, 2, 6, sigma_str);
+        // display M48 result on LCD
+        lcd_status_printf_P(0, PSTR("Standard Deviation: %s"), sigma_str);
+      #endif
+    
     }
 
     clean_up_after_endstop_or_probe_move();
