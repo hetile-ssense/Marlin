@@ -7,8 +7,8 @@ This firmware support:
 * MKS Gen L motherboard
 * TMC2208 in UART mode on all axis
 * M48 (test) and M122 activated and M906 working fine
-* X and Y axis running in *STEALTHCHOP*
-* Z and E axis runnign in *SPREADCYCLE*
+* X, Y and Z axis running in *STEALTHCHOP*
+* E axis runnign in *SPREADCYCLE*
 * [TH3D EZABL](https://www.th3dstudio.com/ezabl-kit/)
 * [Petsfan](https://www.thingiverse.com/thing:2759439) mount for EZABL 
 * Hotend fan only spin if hotend is > 90°C 
