@@ -1,3 +1,25 @@
+# hetile's 3D Printer config
+
+This is my tweaks on the Marlin firmware for my printer which is at it's core, a Ender 3 with some heavy mods.
+
+This firmware support:
+
+* MKS Gen L motherboard
+* TMC2208 in UART mode on all axis
+* M48 (test) and M122 activated and M906 working fine
+* X and Y axis running in *STEALTHCHOP*
+* Z and E axis runnign in *SPREADCYCLE*
+* [TH3D EZABL](https://www.th3dstudio.com/ezabl-kit/)
+* [Petsfan](https://www.thingiverse.com/thing:2759439) mount for EZABL 
+* Hotend fan only spin if hotend is > 90°C 
+* Stock LCD
+* Babysteps
+* M48 Menu item directly on the LCD
+
+NOTE: I have added a "#define INVERT_E0_E1_PINOUT" [here](https://github.com/hetile-ssense/Marlin/blob/256744364c18733d5c8539e67f1b908061f672a5/Marlin/Configuration.h#L5) because my motherboard has a buster E0 so I had to use E1 instead and remap the PINOUT. You'll most likely NOT need this. You can comment the line to have normal pinout.
+
+
+
 # Marlin 3D Printer Firmware
 <img align="right" src="../../raw/1.1.x/buildroot/share/pixmaps/logo/marlin-250.png" />
 
