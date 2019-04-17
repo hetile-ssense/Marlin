@@ -7980,7 +7980,7 @@ inline void gcode_M42() {
     if (verbose_level > 0)
       SERIAL_PROTOCOLLNPGM("M48 Z-Probe Repeatability Test");
     //  Set lcd display to M48 test running
-    lcd_setstatus("M48 Test");
+    lcd_setstatus("M48 test running");
 
     const int8_t n_samples = parser.byteval('P', 10);
     if (!WITHIN(n_samples, 4, 50)) {
