@@ -2,7 +2,7 @@
 #define MOTHERBOARD BOARD_MKS_GEN_L
 
 // This is just a shortcut
-#define MY_GRID_MAX_POINTS_X 3
+#define MY_GRID_MAX_POINTS_X 4
 
 // This is a hack for my printer only since my motherboard has a busted E0, I'm using E1 instead and re-map the pinout
 #define INVERT_E0_E1_PINOUT
@@ -787,7 +787,7 @@
 #define Z_PROBE_OFFSET_FROM_EXTRUDER -1.11   // Z offset: -below +above  [the nozzle]
 
 // Certain types of probes need to stay away from edges
-#define MIN_PROBE_EDGE 20
+#define MIN_PROBE_EDGE 15
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
@@ -818,7 +818,7 @@
  *     But: `M851 Z+1` with a CLEARANCE of 2  =>  2mm from bed to nozzle.
  */
 #define Z_CLEARANCE_DEPLOY_PROBE   2 // Z Clearance for Deploy/Stow
-#define Z_CLEARANCE_BETWEEN_PROBES  5 // Z Clearance between probe points
+#define Z_CLEARANCE_BETWEEN_PROBES  2 // Z Clearance between probe points
 #define Z_CLEARANCE_MULTI_PROBE     5 // Z Clearance between multiple probes
 #define Z_AFTER_PROBING           5 // Z position after probing is done
 
