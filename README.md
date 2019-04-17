@@ -11,11 +11,11 @@ This firmware support:
 * E axis runnign in *SPREADCYCLE*
 * Default axis current set to 760, 760, 810, 900 (x,y,z,e)
 * [TH3D EZABL](https://www.th3dstudio.com/ezabl-kit/)
-* [Petsfan](https://www.thingiverse.com/thing:2759439) mount for EZABL 
-* Hotend fan only spin if hotend is > 90°C 
+* [Petsfan](https://www.thingiverse.com/thing:2759439) mount for EZABL
+* Hotend fan only spin if hotend is > 90°C
 * Stock LCD
 * Babysteps (+ more precise Z offset)
-* M48 Menu item directly on the LCD
+* M48 Menu item on the LCD
 
 NOTE: I have added a "#define INVERT_E0_E1_PINOUT" [here](https://github.com/hetile-ssense/Marlin/blob/256744364c18733d5c8539e67f1b908061f672a5/Marlin/Configuration.h#L5) because my motherboard has a buster E0 so I had to use E1 instead and remap the PINOUT. You'll most likely NOT need this. You can comment the line to have normal pinout.
 
