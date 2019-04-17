@@ -1,8 +1,14 @@
 // Here, we set our awesome motherboard
 #define MOTHERBOARD BOARD_MKS_GEN_L
 
-// This is just a shortcut
+// Shortcut: Number of point to probe for ABL
 #define MY_GRID_MAX_POINTS_X 4
+
+// Shortcut: Initial Z offset
+#define MY_Z_PROBE_OFFSET_FROM_EXTRUDER -1.127
+
+// Shortcut: Default E step
+#define MY_DEFAULT_ESTEP 96.6
 
 // This is a hack for my printer only since my motherboard has a busted E0, I'm using E1 instead and re-map the pinout
 #define INVERT_E0_E1_PINOUT
@@ -614,7 +620,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 96.6 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, MY_DEFAULT_ESTEP }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -784,10 +790,10 @@
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER +48  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER -2  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -1.11   // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER MY_Z_PROBE_OFFSET_FROM_EXTRUDER   // Z offset: -below +above  [the nozzle]
 
 // Certain types of probes need to stay away from edges
-#define MIN_PROBE_EDGE 15
+#define MIN_PROBE_EDGE 10
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
@@ -1504,7 +1510,7 @@
 //
 // Add individual axis homing items (Home X, Home Y, and Home Z) to the LCD menu.
 //
-//#define INDIVIDUAL_AXIS_HOMING_MENU
+#define INDIVIDUAL_AXIS_HOMING_MENU
 
 //
 // SPEAKER/BUZZER
