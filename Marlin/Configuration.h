@@ -2,13 +2,13 @@
 #define MOTHERBOARD BOARD_MKS_GEN_L
 
 // Shortcut: Number of point to probe for ABL
-#define MY_GRID_MAX_POINTS_X 4
+#define MY_GRID_MAX_POINTS_X 3
 
 // Shortcut: Initial Z offset
-#define MY_Z_PROBE_OFFSET_FROM_EXTRUDER -1.127
+#define MY_Z_PROBE_OFFSET_FROM_EXTRUDER -1.110
 
 // Shortcut: Default E step
-#define MY_DEFAULT_ESTEP 96.6
+#define MY_DEFAULT_ESTEP 96
 
 // This is a hack for my printer only since my motherboard has a busted E0, I'm using E1 instead and re-map the pinout
 #define INVERT_E0_E1_PINOUT
