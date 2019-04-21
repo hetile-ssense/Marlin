@@ -5,10 +5,10 @@
 #define MY_GRID_MAX_POINTS_X 3
 
 // Shortcut: Initial Z offset
-#define MY_Z_PROBE_OFFSET_FROM_EXTRUDER -1.110
+#define MY_Z_PROBE_OFFSET_FROM_EXTRUDER -1.160
 
 // Shortcut: Default E step
-#define MY_DEFAULT_ESTEP 96
+#define MY_DEFAULT_ESTEP 96.6
 
 // This is a hack for my printer only since my motherboard has a busted E0, I'm using E1 instead and re-map the pinout
 #define INVERT_E0_E1_PINOUT
@@ -670,7 +670,7 @@
  *
  * See https://github.com/synthetos/TinyG/wiki/Jerk-Controlled-Motion-Explained
  */
-//#define S_CURVE_ACCELERATION
+#define S_CURVE_ACCELERATION
 
 //===========================================================================
 //============================= Z Probe Options =============================
