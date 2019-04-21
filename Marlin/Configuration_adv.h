@@ -450,7 +450,7 @@
 //
 // Use Junction Deviation instead of traditional Jerk Limiting
 //
-//#define JUNCTION_DEVIATION
+#define JUNCTION_DEVIATION
 #if ENABLED(JUNCTION_DEVIATION)
   #define JUNCTION_DEVIATION_MM 0.02  // (mm) Distance from real junction edge
 #endif
@@ -1249,6 +1249,7 @@
   // set the Z and E0 in spreadCycle instead of STEALTHCHOP
   #define TMC_ADV() { \
     stepperE0.en_spreadCycle(true); \
+    stepperZ.en_spreadCycle(true); \
   }
 
 #endif // TMC2130 || TMC2208
