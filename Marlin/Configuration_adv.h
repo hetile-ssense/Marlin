@@ -1247,11 +1247,11 @@
     stepperZ.en_spreadCycle(true); \
    */
   // set the Z and E0 in spreadCycle instead of STEALTHCHOP
-  #define TMC_ADV() { \
+/*  #define TMC_ADV() { \
     stepperE0.en_spreadCycle(true); \
     stepperZ.en_spreadCycle(true); \
   }
-
+*/
 #endif // TMC2130 || TMC2208
 
 // @section L6470

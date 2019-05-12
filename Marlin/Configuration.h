@@ -5,10 +5,10 @@
 #define MY_GRID_MAX_POINTS_X 3
 
 // Shortcut: Initial Z offset
-#define MY_Z_PROBE_OFFSET_FROM_EXTRUDER -1.160
+#define MY_Z_PROBE_OFFSET_FROM_EXTRUDER -0.980
 
 // Shortcut: Default E step
-#define MY_DEFAULT_ESTEP 96.6
+#define MY_DEFAULT_ESTEP 407.7
 
 // This is a hack for my printer only since my motherboard has a busted E0, I'm using E1 instead and re-map the pinout
 #define INVERT_E0_E1_PINOUT
@@ -473,7 +473,7 @@
  * Note: For Bowden Extruders make this large enough to allow load/unload.
  */
 #define PREVENT_LENGTHY_EXTRUDE
-#define EXTRUDE_MAXLENGTH 200
+#define EXTRUDE_MAXLENGTH 1000
 
 //===========================================================================
 //======================== Thermal Runaway Protection =======================

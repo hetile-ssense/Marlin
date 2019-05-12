@@ -7,8 +7,8 @@ This firmware support:
 * MKS Gen L motherboard
 * TMC2208 in UART mode on all axis
 * M48 (test) and M122 activated and M906 working fine
-* X, Y axis running in *STEALTHCHOP*
-* Z, E axis runnign in *SPREADCYCLE*
+* All axis running in *STEALTHCHOP*
+* (Note: Z, E used to run *SPREADCYCLE*, code is commented if you need it)
 * Default axis current set to 760, 760, 810, 900 (x,y,z,e)
 * [TH3D EZABL](https://www.th3dstudio.com/ezabl-kit/)
 * [Petsfan](https://www.thingiverse.com/thing:2759439) mount for EZABL mini
@@ -17,6 +17,7 @@ This firmware support:
 * Babysteps (+ more precise Z offset)
 * M48 Menu item on the LCD
 * S_CURVE_ACCELERATION and JUNCTION_DEVIATION enabled
+* Extrusion limit increased to 1000 to help load/unload with BMG
 
 NOTE: I have added a "#define INVERT_E0_E1_PINOUT" [here](https://github.com/hetile-ssense/Marlin/blob/256744364c18733d5c8539e67f1b908061f672a5/Marlin/Configuration.h#L5) because my motherboard has a buster E0 so I had to use E1 instead and remap the PINOUT. You'll most likely NOT need this. You can comment the line to have normal pinout.
 
