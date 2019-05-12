@@ -5,21 +5,20 @@ This is my tweaks on the Marlin firmware for my printer which is at it's core, a
 This firmware support:
 
 * MKS Gen L motherboard
-* TMC2208 in UART mode on all axis
-* M48 (test) and M122 activated and M906 working fine
-* All axis running in *STEALTHCHOP*
-* (Note: Z, E used to run *SPREADCYCLE*, code is commented if you need it)
-* Default axis current set to 760, 760, 810, 900 (x,y,z,e)
+* [TMC2208 in UART mode on all axis](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration.h#L552)
+* [M48](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration.h#L838) (test) and [M122](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration_adv.h#L1155) activated and M906 working fine
+* X, Y axis running in *STEALTHCHOP*
+* (Note: Z, E used to run [*SPREADCYCLE*](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration_adv.h#L1250), code is commented if you need it)
+* Default axis current set to [760, 760, 810, 900](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration_adv.h#L1100) (x,y,z,e)
 * [TH3D EZABL](https://www.th3dstudio.com/ezabl-kit/)
 * [Petsfan](https://www.thingiverse.com/thing:2759439) mount for EZABL mini
-* Hotend fan only spin if hotend is > 90°C
+* Hotend fan only spin [if hotend is > 90°C](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration_adv.h#L241)
 * Stock LCD
-* Babysteps (+ more precise Z offset)
+* [Babysteps](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration_adv.h#L748) (+ more precise Z offset)
 * M48 Menu item on the LCD
-* S_CURVE_ACCELERATION and JUNCTION_DEVIATION enabled
-* Extrusion limit increased to 1000 to help load/unload with BMG
+* [S_CURVE_ACCELERATION](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration.h#L666) and [JUNCTION_DEVIATION](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration_adv.h#L453) enabled
 
-NOTE: I have added a "#define INVERT_E0_E1_PINOUT" [here](https://github.com/hetile-ssense/Marlin/blob/256744364c18733d5c8539e67f1b908061f672a5/Marlin/Configuration.h#L5) because my motherboard has a buster E0 so I had to use E1 instead and remap the PINOUT. You'll most likely NOT need this. You can comment the line to have normal pinout.
+NOTE: I have added a "#define INVERT_E0_E1_PINOUT" [here](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration.h#L13) because my motherboard has a buster E0 so I had to use E1 instead and remap the PINOUT. You'll most likely NOT need this. You can comment the line to have normal pinout.
 
 
 
