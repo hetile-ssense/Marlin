@@ -9,7 +9,7 @@ This firmware support:
 * [M48](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration.h#L838) (test) and [M122](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration_adv.h#L1155) activated and M906 working fine
 * X, Y axis running in *STEALTHCHOP*
 * (Note: Z, E used to run [*SPREADCYCLE*](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration_adv.h#L1250), code is commented if you need it)
-* Default axis current set to [760, 760, 810, 900](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration_adv.h#L1100) (x,y,z,e)
+* Default axis current set to [760, 760, 760, 900](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration_adv.h#L1100) (x,y,z,e)
 * [TH3D EZABL](https://www.th3dstudio.com/ezabl-kit/)
 * [Petsfan](https://www.thingiverse.com/thing:2759439) mount for EZABL mini
 * Hotend fan only spin [if hotend is > 90°C](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration_adv.h#L241)
