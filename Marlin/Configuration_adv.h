@@ -1109,7 +1109,7 @@
   #define Y_CURRENT          760
   #define Y_MICROSTEPS        16
 
-  #define Z_CURRENT          810
+  #define Z_CURRENT          760
   #define Z_MICROSTEPS        16
 
   #define X2_CURRENT         800
