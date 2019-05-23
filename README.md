@@ -17,7 +17,7 @@ This firmware support:
 * [Babysteps](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration_adv.h#L748) (+ more precise Z offset)
 * M48 Menu item on the LCD
 * [S_CURVE_ACCELERATION](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration.h#L666) and [JUNCTION_DEVIATION](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration_adv.h#L453) enabled
-
+* TEMP_SENSOR_0 set to 5 because using [TriangleLab thermistor](https://www.aliexpress.com/item/1PCS-trianglelab-ATC-Semitec-104GT-2-104NT-4-R025H42G-Thermistor-Cartridge-for-E3D-V6-Volcano-Sensor/32843785247.html?spm=a2g0s.9042311.0.0.15f94c4d3rbgp0)
 NOTE: I have added a "#define INVERT_E0_E1_PINOUT" [here](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration.h#L13) because my motherboard has a buster E0 so I had to use E1 instead and remap the PINOUT. You'll most likely NOT need this. You can comment the line to have normal pinout.
 
 
