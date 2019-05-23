@@ -144,7 +144,7 @@
 
 // Optional custom name for your RepStrap or other custom machine
 // Displayed in the LCD "Ready" message
-#define CUSTOM_MACHINE_NAME "pinky! (marlin)"
+#define CUSTOM_MACHINE_NAME "pinky! (v6)"
 
 // Define this to set a unique identifier for this printer, (Used by some programs to differentiate between machines)
 // You can use an online service to generate a random UUID. (eg http://www.uuidgenerator.net/version4)
@@ -387,9 +387,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Creality Ender-3
-  #define DEFAULT_Kp 21.73
-  #define DEFAULT_Ki 1.54
-  #define DEFAULT_Kd 76.55
+  #define DEFAULT_Kp 11.53
+  #define DEFAULT_Ki 0.70
+  #define DEFAULT_Kd 47.68
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
