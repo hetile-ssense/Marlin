@@ -5,20 +5,20 @@ This is my tweaks on the Marlin firmware for my printer which is at it's core, a
 This firmware support:
 
 * MKS Gen L motherboard
-* [TMC2208 in UART mode on all axis](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration.h#L552)
-* [M48](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration.h#L838) (test) and [M122](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration_adv.h#L1155) activated and M906 working fine
+* [TMC2208 in UART mode on all axis](https://github.com/hetile-ssense/Marlin/blob/43fa34cf4d136e6db0d844c84f309918dedfce4b/Marlin/Configuration.h#L556)
+* [M48](https://github.com/hetile-ssense/Marlin/blob/43fa34cf4d136e6db0d844c84f309918dedfce4b/Marlin/Configuration.h#L842) (test) and [M122](https://github.com/hetile-ssense/Marlin/blob/43fa34cf4d136e6db0d844c84f309918dedfce4b/Marlin/Configuration_adv.h#L1156) activated and M906 working fine
 * X, Y axis running in *STEALTHCHOP*
-* (Note: Z, E used to run [*SPREADCYCLE*](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration_adv.h#L1250), code is commented if you need it)
-* Default axis current set to [760, 760, 760, 900](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration_adv.h#L1100) (x,y,z,e)
+* (Note: Z, E used to run [*SPREADCYCLE*](https://github.com/hetile-ssense/Marlin/blob/43fa34cf4d136e6db0d844c84f309918dedfce4b/Marlin/Configuration_adv.h#L1237), code is commented if you need it)
+* Default axis current set to [760, 760, 760, 900](https://github.com/hetile-ssense/Marlin/blob/43fa34cf4d136e6db0d844c84f309918dedfce4b/Marlin/Configuration_adv.h#L1101) (x,y,z,e)
 * [TH3D EZABL](https://www.th3dstudio.com/ezabl-kit/)
 * [Petsfan](https://www.thingiverse.com/thing:2759439) mount for EZABL mini
-* Hotend fan only spin [if hotend is > 90°C](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration_adv.h#L241)
+* Hotend fan only spin [if hotend is > 90°C](https://github.com/hetile-ssense/Marlin/blob/43fa34cf4d136e6db0d844c84f309918dedfce4b/Marlin/Configuration_adv.h#L228)
 * Stock LCD
-* [Babysteps](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration_adv.h#L748) (+ more precise Z offset)
+* [Babysteps](https://github.com/hetile-ssense/Marlin/blob/43fa34cf4d136e6db0d844c84f309918dedfce4b/Marlin/Configuration_adv.h#L741) (+ more precise Z offset)
 * M48 Menu item on the LCD
-* [S_CURVE_ACCELERATION](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration.h#L666) and [JUNCTION_DEVIATION](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration_adv.h#L453) enabled
+* [S_CURVE_ACCELERATION](https://github.com/hetile-ssense/Marlin/blob/43fa34cf4d136e6db0d844c84f309918dedfce4b/Marlin/Configuration.h#L670) and [JUNCTION_DEVIATION](https://github.com/hetile-ssense/Marlin/blob/43fa34cf4d136e6db0d844c84f309918dedfce4b/Marlin/Configuration_adv.h#L450) enabled
 * TEMP_SENSOR_0 set to 5 because using [TriangleLab thermistor](https://www.aliexpress.com/item/1PCS-trianglelab-ATC-Semitec-104GT-2-104NT-4-R025H42G-Thermistor-Cartridge-for-E3D-V6-Volcano-Sensor/32843785247.html?spm=a2g0s.9042311.0.0.15f94c4d3rbgp0)
-NOTE: I have added a "#define INVERT_E0_E1_PINOUT" [here](https://github.com/hetile-ssense/Marlin/blob/7de863bcbef0997d1ca7f47c30cbd3b8899f053b/Marlin/Configuration.h#L13) because my motherboard has a buster E0 so I had to use E1 instead and remap the PINOUT. You'll most likely NOT need this. You can comment the line to have normal pinout.
+NOTE: I have added a "#define INVERT_E0_E1_PINOUT" [here](https://github.com/hetile-ssense/Marlin/blob/43fa34cf4d136e6db0d844c84f309918dedfce4b/Marlin/Configuration.h#L13) because my motherboard has a buster E0 so I had to use E1 instead and remap the PINOUT. You'll most likely NOT need this. You can comment the line to have normal pinout.
 
 
 
