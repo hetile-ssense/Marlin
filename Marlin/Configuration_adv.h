@@ -1244,12 +1244,12 @@
    * #define TMC_ADV() { \
    *   stepperX.diag0_temp_prewarn(1); \
    *   stepperY.interpolate(0); \
+   *   stepperE0.en_spreadCycle(true); \
    * }
     stepperZ.en_spreadCycle(true); \
    */
   // set the Z and E0 in spreadCycle instead of STEALTHCHOP
 /*  #define TMC_ADV() { \
-    stepperE0.en_spreadCycle(true); \
     stepperZ.en_spreadCycle(true); \
   }
 */
