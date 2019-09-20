@@ -111,7 +111,7 @@
  *
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT -1
+#define SERIAL_PORT 0
 
 /**
  * Select a secondary serial port on the board to use for communication with the host.
@@ -120,7 +120,7 @@
  *
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT_2 2
+#define SERIAL_PORT_2 -1
 
 /**
  * This setting determines the communication speed of the printer.
@@ -735,7 +735,7 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4[, E5]]]]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 500, 500, 5, 50 }
+#define DEFAULT_MAX_FEEDRATE          { 500, 500, 5, 25 }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -754,7 +754,7 @@
  *   M204 T    Travel Acceleration
  */
 #define DEFAULT_ACCELERATION          500    // X, Y, Z and E acceleration for printing moves
-#define DEFAULT_RETRACT_ACCELERATION  1000    // E acceleration for retracts
+#define DEFAULT_RETRACT_ACCELERATION  500    // E acceleration for retracts
 #define DEFAULT_TRAVEL_ACCELERATION   500    // X, Y, Z acceleration for travel (non printing) moves
 
 /**
@@ -1050,8 +1050,8 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 220
-#define Y_BED_SIZE 220
+#define X_BED_SIZE 235
+#define Y_BED_SIZE 235
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
@@ -1577,7 +1577,7 @@
  *
  * View the current statistics with M78.
  */
-//#define PRINTCOUNTER
+#define PRINTCOUNTER
 
 //=============================================================================
 //============================= LCD and SD support ============================
@@ -1675,7 +1675,7 @@
 // Use this option to override the number of step signals required to
 // move between next/prev menu items.
 //
-//#define ENCODER_STEPS_PER_MENU_ITEM 1
+#define ENCODER_STEPS_PER_MENU_ITEM 1
 
 /**
  * Encoder Direction Options
@@ -1692,7 +1692,7 @@
 //
 //  Set this option if CLOCKWISE causes values to DECREASE
 //
-#define REVERSE_ENCODER_DIRECTION
+//#define REVERSE_ENCODER_DIRECTION
 
 //
 // This option reverses the encoder direction for navigating LCD menus.

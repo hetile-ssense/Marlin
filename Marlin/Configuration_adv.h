@@ -580,7 +580,7 @@
    * V3.1: Force a probe with unknown mode into selected mode at Marlin startup ( = Probe EEPROM write )
    * To preserve the life of the probe, use this once then turn it off and re-flash.
    */
-  #define BLTOUCH_FORCE_MODE_SET
+  //#define BLTOUCH_FORCE_MODE_SET
 
   /**
    * Use "HIGH SPEED" mode for probing.
@@ -1270,7 +1270,7 @@
   #if ENABLED(DOUBLECLICK_FOR_Z_BABYSTEPPING)
     #define DOUBLECLICK_MAX_INTERVAL 1250   // Maximum interval between clicks, in milliseconds.
                                             // Note: Extra time may be added to mitigate controller latency.
-    //#define BABYSTEP_ALWAYS_AVAILABLE     // Allow babystepping at all times (not just during movement).
+    #define BABYSTEP_ALWAYS_AVAILABLE     // Allow babystepping at all times (not just during movement).
     //#define MOVE_Z_WHEN_IDLE              // Jump to the move Z menu on doubleclick when printer is idle.
     #if ENABLED(MOVE_Z_WHEN_IDLE)
       #define MOVE_Z_IDLE_MULTIPLICATOR 1   // Multiply 1mm by this factor for the move step size.
@@ -1947,7 +1947,7 @@
   #define Z_HYBRID_THRESHOLD       3
   #define Z2_HYBRID_THRESHOLD      3
   #define Z3_HYBRID_THRESHOLD      3
-  #define E0_HYBRID_THRESHOLD     50
+  #define E0_HYBRID_THRESHOLD     30
   #define E1_HYBRID_THRESHOLD     30
   #define E2_HYBRID_THRESHOLD     30
   #define E3_HYBRID_THRESHOLD     30
