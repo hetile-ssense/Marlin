@@ -2,7 +2,7 @@
 #define MY_GRID_MAX_POINTS_X 3
 
 // Shortcut: Initial Z offset
-#define MY_Z_PROBE_OFFSET_FROM_EXTRUDER -1.920
+#define MY_Z_PROBE_OFFSET_FROM_EXTRUDER -2.290
 
 // Shortcut: Default E step
 #define MY_DEFAULT_ESTEP 408
